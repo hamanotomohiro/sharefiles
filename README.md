@@ -12,7 +12,14 @@ README.md
  8) > git push origin master
 
 
- > cd [current directory]
- > npm install
- 
+ ### herokuへの公開 ###
+ 1) > git clone https://github.com/hamanotomohiro/sharefiles.git
+ 2) > cd ./sharefiles
+ 3) > rm -rf .git
+ 4) > npm install
+ 5) > git init
+ 6) > git add -A
+ 7) > git commit -m "heroku update"
+ 8) > heroku create tomosharefiles
+ 9) > git push heroku master
  
