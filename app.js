@@ -37,7 +37,8 @@ app.use('/', routes);
 app.use('/users', users);
 
 app.use('/docs', function(req, res){
-  res.download('./routes/doc.zip', 'documents.zip');
+  var docpath = __dirname + '/routes/doc.zip';
+  res.download(docpath, 'documents.zip');
 });
 
 // 上記のどれにも当てはまらないルーティング設定の場合はhttp statusの404を返す
